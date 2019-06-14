@@ -1,33 +1,73 @@
-.App {
-  text-align: center;
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Roboto', sans-serif;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+nav {
+  padding: 20px 10px;
   color: white;
+  background: grey;
 }
 
-.App-link {
-  color: #61dafb;
+.note-form {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.note-form input {
+  padding: 3px 3px;
+  outline: none;
+}
+
+.note-form button {
+  margin-left: 10px;
+  color: white;
+  background: #007bff;
+  padding: 5px 10px;
+  border: none;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.notes-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.note {
+  width: 20%;
+  margin: 10px;
+  padding: 13px;
+  border-radius: 5px;
+  border: solid lightgray 1px;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.btn-container button {
+  margin-right: 10px;
+}
+
+.edit {
+  color: white;
+  background: #007bff;
+  padding: 5px 10px;
+  border: none;
+}
+
+.delete {
+  color: white;
+  background: #dc3545;
+  padding: 5px 10px;
+  border: none;
 }
